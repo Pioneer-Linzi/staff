@@ -1,6 +1,6 @@
 {
   "name": "@cafee/staff",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/cafee-origin/staff#readme",
   "dependencies": {
+    "importz": "^1.0.10",
+    "npm-process": "^1.1.0",
+    "promise-super": "^1.0.3",
+    "ressive": "^2.1.2",
     "vue": "^2.5.17",
     "vue-router": "^3.0.2",
     "vuex": "^3.0.1"
@@ -28,10 +32,6 @@
   "devDependencies": {
     "cross-env": "^5.2.0",
     "cross-env-argv": "^1.0.5",
-    "importz": "^1.0.10",
-    "npm-process": "^1.1.0",
-    "promise-super": "^1.0.1",
-    "ressive": "^2.1.2",
     "webpack-root": "^1.1.3"
   }
 }
