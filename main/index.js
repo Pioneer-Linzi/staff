@@ -1,9 +1,6 @@
 // Project Structure
 import Ressive from 'ressive'
 
-// Package Import
-import Importz from 'importz'
-
 // Vue Core
 import Vue from 'vue'
 
@@ -45,8 +42,6 @@ export default class Staff
 				Vuex,
 
 				Configure,
-
-				Importz,
 
 				Project
 			},
