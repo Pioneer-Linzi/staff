@@ -22,7 +22,7 @@ module.exports = class Pie
 
 					.next(
 
-						() => console.log( `vue staff is ready .` )
+						( /* Anita Mui */ ) => { /* 1963.10.10 - 2003.12.30 */ }
 
 					)
 

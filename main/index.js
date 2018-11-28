@@ -10,6 +10,12 @@ import Router from 'vue-router'
 // Runtime Vuex
 import Vuex from 'vuex'
 
+// Package Importz
+import Importz from 'importz'
+
+// Lodash
+import _ from 'lodash'
+
 // Main
 import Pie from '../pie'
 
@@ -40,6 +46,10 @@ export default class Staff
 				Router,
 
 				Vuex,
+
+				Importz,
+
+				_,
 
 				Configure,
 
