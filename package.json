@@ -1,6 +1,6 @@
 {
   "name": "@cafee/staff",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "main": "dist/main.js",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/cafee-origin/staff#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "importz": "^1.0.10",
     "lodash": "^4.17.11",
     "npm-process": "^1.1.0",
