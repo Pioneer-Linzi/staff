@@ -10,6 +10,9 @@ import Router from 'vue-router'
 // Runtime Vuex
 import Vuex from 'vuex'
 
+// Runtime I18n
+import I18n from 'vue-i18n'
+
 // Axios
 import Axios from 'axios'
 
@@ -49,6 +52,8 @@ export default class Staff
 				Router,
 
 				Vuex,
+
+				I18n,
 
 				Axios,
 
