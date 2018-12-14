@@ -1,7 +1,9 @@
-module.exports = class Pie
+export default class Pie
 {
-	constructor ( Ressive, Proxy, Promise, Princess, Self = this )
+	constructor ( Ressive, Proxy, Promise, Princess, Self )
 	{
+		Self = Self || this
+
 		Princess = new Promise(
 
 			( resolve, reject ) => {

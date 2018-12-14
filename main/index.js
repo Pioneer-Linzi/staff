@@ -32,6 +32,7 @@ import Promise from 'promise-super'
 const Project = `.${process.cwd()}`
 
 
+
 // Module Export
 export default class Staff
 {
@@ -60,8 +61,6 @@ export default class Staff
 				Importz,
 
 				_,
-
-				Configure,
 
 				Project
 			},

@@ -1,7 +1,8 @@
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
+
+	mode: 'production',
 
 	entry: './index.js',
 
@@ -11,17 +12,15 @@ module.exports = {
 
 		path: path.resolve( __dirname, 'dist' ),
 
-		libraryTarget: 'umd'
+		libraryTarget: 'commonjs2'
 
 	},
 
-	plugins: [
-		new webpack.optimize.UglifyJsPlugin(
-			{
-				compress: { warnings: false }
-			}
-		),
-	],
+	optimization: {
+
+		minimize: true
+
+	},
 
 	module: {
 
@@ -32,9 +31,15 @@ module.exports = {
 					loader: 'babel-loader',
 					options: {
 						presets: [
-							[ 'env', { 'modules': false } ],
-							'stage-0'
-						],
+							[
+								'@babel/preset-env',
+								{
+									targets: {
+										esmodules: false
+									}
+								}
+							]
+						]
 					},
 				},
 				exclude: /node_modules/
@@ -44,13 +49,10 @@ module.exports = {
 	},
 
 	externals: {
-		lodash: {
-			commonjs: 'lodash',
-			commonjs2: 'lodash',
-			amd: 'lodash',
-			root: '_'
-		},
-		vue: 'vue',
-		vuex: 'vuex'
+		'vue': 'vue',
+		'vuex': 'vuex',
+		'vue-router': 'vue-router',
+		'axios': 'axios',
+		'lodash': 'lodash'
 	}
-};
+}

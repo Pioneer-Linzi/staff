@@ -7,4 +7,4 @@
  * ===== ===== ===== ===== =====
  */
 
-module.exports = require('./main')
+export default require('./main').default
