@@ -52,6 +52,7 @@ module.exports = {
 		'vue': 'vue',
 		'vuex': 'vuex',
 		'vue-router': 'vue-router',
+		'vue-i18n': 'vue-i18n',
 		'axios': 'axios',
 		'lodash': 'lodash'
 	}
