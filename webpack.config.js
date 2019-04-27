@@ -49,11 +49,19 @@ module.exports = {
 	},
 
 	externals: {
+		'rxjs': 'rxjs',
 		'vue': 'vue',
 		'vuex': 'vuex',
 		'vue-router': 'vue-router',
 		'vue-i18n': 'vue-i18n',
+		'vue-rx': 'vue-rx',
+		'graphql': 'graphql',
+		'graphql-tag': 'graphql-tag',
 		'axios': 'axios',
-		'lodash': 'lodash'
+		'mobile-detect': 'mobile-detect',
+		'lodash': 'lodash',
+		'rxjs': 'rxjs',
+		'rxjs-compat': 'rxjs-compat',
+		'@baozun/editor-compiler': '@baozun/editor-compiler'
 	}
 }

@@ -1,7 +1,7 @@
 {
   "name": "@cafee/staff",
-  "version": "1.1.4",
-  "description": "",
+  "version": "1.1.22",
+  "description": "a simple staff for vue",
   "main": "dist/main.js",
   "scripts": {
     "test": "cross-env node index"
@@ -22,14 +22,22 @@
   "homepage": "https://github.com/cafee-origin/staff#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "graphql": "^14.1.1",
+    "graphql-tag": "^2.10.1",
     "importz": "^1.0.10",
     "lodash": "^4.17.11",
+    "mobile-detect": "^1.4.3",
     "npm-process": "^1.1.0",
     "promise-super": "^1.1.5",
     "ressive": "^2.1.2",
+    "rxjs": "^6.4.0",
+    "rxjs-compat": "^6.4.0",
     "vue": "^2.5.17",
-    "vue-i18n": "^8.4.0",
+    "vue-apollo": "^3.0.0-beta.28",
+    "vue-i18n": "^8.8.0",
+    "vue-no-ssr": "^1.1.1",
     "vue-router": "^3.0.2",
+    "vue-rx": "^6.1.0",
     "vuex": "^3.0.1"
   },
   "devDependencies": {

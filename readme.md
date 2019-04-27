@@ -1,4 +1,5 @@
 # @cafee/staff
+
 > a simple staff for vue
 
 ## How to use ?
@@ -11,10 +12,13 @@ npm i -s @cafee/staff
 import Staff from '@cafee/staff'
 
 // run staff
-new Staff({ /* Manifest */ }).then({ Vue, Router, Vuex }, next) => {
+new Staff({ /* Manifest */ })
+
+	.then({ Vue, Router, Vuex }, next) => {
 
 	/* ======== Extention Code Here ======== */
-	// Do Something
+
+	/* Do Something */
 
 	// Running
 	next(
