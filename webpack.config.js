@@ -50,6 +50,7 @@ module.exports = {
 
 	externals: {
 		'rxjs': 'rxjs',
+		'core-js': 'core-js',
 		'vue': 'vue',
 		'vuex': 'vuex',
 		'vue-router': 'vue-router',
@@ -60,7 +61,6 @@ module.exports = {
 		'axios': 'axios',
 		'mobile-detect': 'mobile-detect',
 		'lodash': 'lodash',
-		'rxjs': 'rxjs',
 		'rxjs-compat': 'rxjs-compat',
 		'@baozun/editor-compiler': '@baozun/editor-compiler'
 	}

@@ -1,6 +1,9 @@
 // Project Structure
 import Ressive from 'ressive'
 
+// Core JS
+import Core from 'core-js'
+
 // RxJS: Must Use Node Require
 const Rx = require('rxjs')
 
@@ -37,6 +40,9 @@ import Agent from 'mobile-detect'
 // Package Importz
 import Importz from 'importz'
 
+// Mock JS
+import Mock from 'mockjs'
+
 // Lodash
 import _ from 'lodash'
 
@@ -68,6 +74,8 @@ export default class Staff
 			{
 				Rx,
 
+				Core,
+
 				Vue,
 
 				Router,
@@ -87,6 +95,8 @@ export default class Staff
 				Gql,
 
 				Agent,
+
+				Mock,
 
 				Importz,
 

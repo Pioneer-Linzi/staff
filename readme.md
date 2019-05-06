@@ -4,7 +4,7 @@
 
 ## How to use ?
 
-```javascript
+```js
 // install staff
 npm i -s @cafee/staff
 
@@ -14,40 +14,42 @@ import Staff from '@cafee/staff'
 // run staff
 new Staff({ /* Manifest */ })
 
-	.then({ Vue, Router, Vuex }, next) => {
+	.then(
 
-	/* ======== Extention Code Here ======== */
+		({ Vue, Router, Vuex }, next) => {
 
-	/* Do Something */
+		/* ======== Extention Code Here ======== */
 
-	// Running
-	next(
+		// Running
+		next(
 
-		// Instantiation
-		new Vue({
+			// Instantiation
+			new Vue({
 
-			// Router
-			router: new Router({
-				mode: 'history',
-				base: process.env.BASE_URL,
-				routes: { /* Rtouer Configure */ }
-			}),
+				// Router
+				router: new Router({
+					mode: 'history',
+					base: process.env.BASE_URL,
+					routes: { /* Rtouer Configure */ }
+				}),
 
-			// Store
-			store: new Vuex.Store({ /* Store Configure */ }),
+				// Store
+				store: new Vuex.Store({ /* Store Configure */ }),
 
-			// Render
-			render: (h) => h( /* App Vue */ )
+				// Render
+				render: (h) => h( /* App Vue */ )
 
-		})
+			})
 
-		// Element Mount
-		.$mount('#app'),
+			// Element Mount
+			.$mount('#app'),
 
-		// Hook
-		(vm) => console.log(`Staff Running .`, vm)
+			// Hook
+			(vm) => console.log(`Staff Running .`, vm)
 
-	)
+		)
 
-}
+	}
+
+)
 ```
