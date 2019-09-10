@@ -12,9 +12,9 @@ export default class Pie
 
 					.next(
 
-						({ Vue, Router, Vuex }) => {
+						({ Vue, Bus, Router, Vuex, I18n }) => {
 
-							Vue.use( Router ), Vue.use( Vuex )
+							Vue.use( Bus ), Vue.use( Router ), Vue.use( Vuex ), Vue.use( I18n )
 
 						},
 

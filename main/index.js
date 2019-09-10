@@ -1,6 +1,12 @@
 // Project Structure
 import Ressive from 'ressive'
 
+// Global
+const Global = require('global/window')
+
+// Agent
+import Agent from 'mobile-detect'
+
 // Core JS
 import Core from 'core-js'
 
@@ -9,6 +15,9 @@ const Rx = require('rxjs')
 
 // Vue Core
 import Vue from 'vue'
+
+// Vue Bus
+import Bus from 'vue-bus'
 
 // Vue No SSR
 import NoSSR from 'vue-no-ssr'
@@ -28,23 +37,29 @@ import I18n from 'vue-i18n'
 // Axios
 import Axios from 'axios'
 
+// QS
+import Qs from 'qs'
+
 // Apollo
 import Apollo from 'vue-apollo'
 
 // GraphQL Tag
 import Gql from 'graphql-tag'
 
-// Agent
-import Agent from 'mobile-detect'
-
 // Package Importz
 import Importz from 'importz'
+
+// Import Promise
+import Imports from 'import-promise'
 
 // Mock JS
 import Mock from 'mockjs'
 
 // Lodash
 import _ from 'lodash'
+
+// MD5
+import MD5 from 'md5.js'
 
 // Promise
 import Promise from 'promise-super'
@@ -72,11 +87,17 @@ export default class Staff
 			Ressive,
 
 			{
+				Global,
+
+				Agent,
+
 				Rx,
 
 				Core,
 
 				Vue,
+
+				Bus,
 
 				Router,
 
@@ -90,15 +111,19 @@ export default class Staff
 
 				Axios,
 
+				Qs,
+
 				Apollo,
 
 				Gql,
 
-				Agent,
-
 				Mock,
 
 				Importz,
+
+				Imports,
+
+				MD5,
 
 				_,
 

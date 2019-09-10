@@ -49,6 +49,8 @@ module.exports = {
 	},
 
 	externals: {
+		'global': 'global',
+		'console-color-mr': 'console-color-mr',
 		'rxjs': 'rxjs',
 		'core-js': 'core-js',
 		'vue': 'vue',
@@ -56,12 +58,13 @@ module.exports = {
 		'vue-router': 'vue-router',
 		'vue-i18n': 'vue-i18n',
 		'vue-rx': 'vue-rx',
+		'vue-bus': 'vue-bus',
 		'graphql': 'graphql',
 		'graphql-tag': 'graphql-tag',
 		'axios': 'axios',
 		'mobile-detect': 'mobile-detect',
 		'lodash': 'lodash',
 		'rxjs-compat': 'rxjs-compat',
-		'@baozun/editor-compiler': '@baozun/editor-compiler'
+		'mockjs': 'mockjs'
 	}
 }
